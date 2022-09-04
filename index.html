@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./splide-4.0.7/dist/css/splide.min.css">
+    <script src="./splide-4.0.7/dist/js/splide.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap" rel="stylesheet">
+    <title>Logística MW</title>
+</head>
+<body class="body__index">
+    <header>
+        <div class="nav">
+            <div class="nav__logo">
+                <a href=""><img src="./assets/images/logo-mw.png" alt="Logo MW"></a>
+            </div>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__list-a"><a href="">HOME</a></li>
+                    <li class="nav__list-a"><a href="">FLOTA</a></li>
+                    <li class="nav__list-a"><a href="">SOBRE NOSOTROS</a></li>
+                    <li class="nav__list-a"><a href="">CONTACTO</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="slide__index">
+            <div class="slider__container splide" aria-label="Basic Structure Example">
+                <h3 class="slider__container-title">Logística mimimi</h3>
+                <img class="slider__container-logo" src="./assets/images/logo-mw.jpg" alt="">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="./assets/images/2.jpg" alt=""></img></li>
+                      <li class="splide__slide"><img src="./assets/images/3.jpg" alt=""></img></li>
+                      <li class="splide__slide"><img src="./assets/images/4.jpg" alt=""></img></li>
+                    </ul>
+                </div>                   
+            </div>
+            <script>
+                var splide = new Splide( '.splide', {
+                    type: 'loop',
+                    autoplay:true,
+                    interval: '2500'
+                } );
+                splide.mount();
+            </script>
+        </section>
+        <section class="servicios__container">
+            <h3 class="servicios__title">Servicios de envío</h3>
+            <div class="servicios__container-card">
+                <div class="servicios__card">
+                    <img src="./assets/images/servicios-1.jpg" alt="Servicios de logistica MW">
+                    <h4>Transportes a toda la República Argentina</h4>
+                </div>
+                <div class="servicios__card">
+                    <img src="./assets/images/servicios-2.jpg" alt="Servicios de logistica MW">
+                    <h4>Traslados especiales con envío inmediato dentro de Buenos Aires</h4>
+                </div>
+                <div class="servicios__card">
+                    <img src="./assets/images/servicios-3.jpg" alt="Servicios de logistica MW">
+                    <h4>Todos nuestros servicios se entregan en el día</h4>
+                </div>
+            </div>
+        </section>
+        <section class="flota">
+            <div class="flota__cont-1">
+                <h3 class="flota__title">Flota</h3>
+                <p class="flota__info">
+                    Nuestra flota cuenta con todas las inspecciones exigidas por la ley argentina y, además, se realiza una revisión preventiva diaria para garantizar el mejor servicio de traslado.
+                </p>
+            </div>
+            <div class="flota__cont-2">
+                <div class="flota__cont-2-tall item-1"></div>
+                <div class="flota__cont-2-tall item-2"></div>
+                <div class="flota__cont-2-tall item-3"></div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

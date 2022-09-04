@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body__index{
+    background-color: #f4ece0;
+    font-family: 'Mulish', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "slider slider slider"
+    "card   card   card"
+    "flota  flota  flota"
+    "foot   foot   foot";
+}
+header{
+    grid-area: header;
+}
+.nav{
+    color: #fff;
+    background-color: #0036b3;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vw;
+}
+
+.nav__logo img{
+    height: 6vw;
+    transition: all 0.3s;
+
+}
+.nav__logo img:hover{
+    transform: scale(1.15);
+}
+
+.nav__list{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__list-a{
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+.nav__list-a:hover{
+    background-color: #6688E6;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+    /* slider */
+
+.slide__index{
+    grid-area: slider;
+}
+.slider__container{
+    background-color: #585E6B;
+    width: 90%;
+    height: 70vh;
+    margin: 2rem auto;
+    margin-bottom: 5em;
+}
+
+.splide__slide img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+.slider__container-logo{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    height: 40vh;
+}
+.slider__container-title{
+    position: absolute;
+    z-index: 1;
+}
+
+    /* cards */
+
+.servicios__container{
+    grid-area: card;
+    margin-bottom: 4em;
+}
+.servicios__title{
+    text-align: center;
+    font-size: 3em;
+    color: #585E6B;
+    margin-bottom: 2em;
+}
+.servicios__container-card{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.servicios__card{
+    width: 30vw;
+    height: 40vh;
+    font-size: 1.5em;
+    background-color: #dedfe4;
+    border-radius: 5%;
+    align-items: center;
+    box-shadow: 2px 2px #585E6B;
+    transition: all 0.3s;
+}
+.servicios__card:hover{
+    transform: scale(1.1);
+}
+.servicios__card img{
+    width: 100%;
+    height: 80%;
+    padding-bottom: 1.2em;
+    object-fit: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+    /* Flota */
+
+.flota{
+    grid-area: flota;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10em auto;
+}
+.flota__cont-1{
+    text-align: center;
+    width: 40vw;
+}
+.flota__title{
+    font-size: 4.5em;
+    color: #585E6B;
+    margin: 1em;
+}
+.flota__info{
+    font-size: 3em;
+    color: #585E6B;
+    padding-bottom: 5em;
+}
+.flota__cont-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flota__cont-2-tall{
+    width: 35vw;
+    height: 27vh;
+    margin: 1.2em;
+    box-shadow: 2px 2px #000;
+    border-radius: 5%;
+}
+.flota__cont-2 .item-1{
+    background-image: url(./assets/images/flota1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.flota__cont-2 .item-2{
+    background-image: url(./assets/images/flota2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.flota__cont-2 .item-3{
+    background-image: url(./assets/images/flota3.jpg);
+    background-position: center;
+    background-size: cover;
+}
